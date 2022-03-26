@@ -1,0 +1,95 @@
+{
+  "name": "24x7-discord-bot",
+  "version": "0.0.0",
+  "description": "Multifunction Discord Bot",
+  "author": "Viðar",
+  "license": "ISC",
+  "main": "./dist/main.js",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "keywords": [
+    "typescript",
+    "discord",
+    "bot",
+    "client",
+    "api",
+    "library",
+    "framework",
+    "tool",
+    "decorators"
+  ],
+  "homepage": "https://24x7.gg",
+  "bugs": {
+    "url": "https://github.com/24x7-dev/24x7-Bot/issues/new/choose",
+    "email": "vidar@24x7.gg"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/24x7-dev/24x7-Bot"
+  },
+  "contributors": [
+    "VidarDev <ividar@24x7.gg> (https://github.com/VidarDev)"
+  ],
+  "scripts": {
+    "dev": "nodemon ./src/main.ts",
+    "build": "tsc",
+    "start": "node ./dist/main.js",
+    "format": "prettier --write .",
+    "format-check": "prettier --check .",
+    "lint": "eslint --ext .js,.ts .",
+    "prepare": "npx is-ci || npx husky install",
+    "cm": "cz"
+  },
+  "dependencies": {
+    "@discordjs/builders": "^0.12.0",
+    "@discordjs/rest": "^0.3.0",
+    "ascii-table3": "^0.7.3",
+    "discord-api-types": "^0.29.0",
+    "discord.js": "^13.6.0",
+    "discordx": "^9.4.2",
+    "dotenv": "^16.0.0",
+    "glob": "^7.2.0",
+    "mongoose": "^6.2.6",
+    "npm-install-peers": "^1.2.2",
+    "pnpm": "^6.32.3",
+    "promisfy": "^1.2.0",
+    "reflect-metadata": "^0.1.13",
+    "tslib": "^2.3.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.3",
+    "@types/node": "*",
+    "@types/prompts": "^2.0.14",
+    "@types/rimraf": "^3.0.2",
+    "@types/validate-npm-package-name": "^3.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "commitizen": "^4.2.4",
+    "commitlint": "^11.0.0",
+    "commitlint-config-gitmoji": "^2.2.5",
+    "cz-customizable": "^6.3.0",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^16.1.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.2",
+    "husky": "^7.0.4",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.6.0",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-customizable"
+    }
+  },
+  "engines": {
+    "node": ">=17.8.0"
+  },
+  "publishConfig": {
+    "access": "restricted"
+  }
+}

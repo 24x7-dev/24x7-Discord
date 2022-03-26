@@ -1,0 +1,34 @@
+name: Publish create-24x7-bot
+runs-on: ubuntu-latest
+if: github.event.inputs.package == 'create-24x7-bot'
+steps:
+  - name: check out code 🛎
+    uses: actions/checkout@v2
+
+  - name: Install Node v17
+    uses: actions/setup-node@v2
+    with:
+      node-version: '17.x'
+      registry-url: 'https://registry.npmjs.org'
+
+  - name: Synchronize current version
+    run: npm version --git-tag-version=false $(npm view create-24x7-bot version)
+    working-directory: ./packages/create-24x7-bot
+
+  - name: Update version
+    run: npm version --git-tag-version=false ${{ github.event.inputs.version }}
+    working-directory: ./packages/create-24x7-bot
+
+  - name: Install create-24x7-bot dependencies
+    run: npm install
+    working-directory: ./packages/create-24x7-bot
+
+  - name: Build
+    run: npm run build
+    working-directory: ./packages/create-24x7-bot
+
+  - name: Publish
+    run: npm publish
+    env:
+      NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+    working-directory: ./packages/create-24x7-bot

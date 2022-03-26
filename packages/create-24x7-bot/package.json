@@ -1,0 +1,69 @@
+{
+  "name": "create-24x7-bot",
+  "version": "0.0.0",
+  "description": "create 24x7 Bot (24x7-dev) apps with one command",
+  "keywords": [
+    "24x7",
+    "discord.js",
+    "discord",
+    "framework",
+    "cmd",
+    "command",
+    "generator",
+    "template",
+    "bot"
+  ],
+  "homepage": "https://github.com/24x7-dev/24x7-Bot#readme",
+  "bugs": {
+    "url": "https://github.com/24x7-dev/24x7-Bot/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/24x7-dev/24x7-Bot.git"
+  },
+  "license": "MIT",
+  "author": "Viðar <Vidar@24x7.gg> (https://github.com/VidarDev)",
+  "main": "build/index.js",
+  "type": "module",
+  "files": [
+    "build",
+    "LICENSE",
+    "README.md",
+    "package.json"
+  ],
+  "bin": {
+    "create-24x7-bot": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "boxen": "^6.2.1",
+    "chalk": "^5.0.1",
+    "got": "^12.0.2",
+    "is-installed-globally": "^0.4.0",
+    "ora": "^6.1.0",
+    "prompts": "^2.4.2",
+    "rimraf": "^3.0.2",
+    "tar": "^6.1.11",
+    "typescript": "^4.6.2",
+    "update-check": "^1.5.4",
+    "validate-npm-package-name": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/prompts": "^2.0.14",
+    "@types/rimraf": "^3.0.2",
+    "@types/tar": "^6.1.1",
+    "@types/validate-npm-package-name": "^3.0.3",
+    "husky": "^7.0.0"
+  }
+}

@@ -1,0 +1,62 @@
+name: Publish - Stable
+on:
+  workflow_dispatch:
+    inputs:
+      package:
+        description: 'package name'
+        required: true
+        type: string
+      version:
+        description: 'npm version'
+        default: 'patch'
+        required: true
+        type: string
+
+jobs:
+  publish:
+    name: Publish
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - package: 'create-24x7-bot'
+            folder: 'create-24x7-bot'
+    steps:
+      - name: check out code 🛎
+        if: github.event.inputs.package == matrix.package
+        uses: actions/checkout@v2
+
+      - name: Install Node v17
+        if: github.event.inputs.package == matrix.package
+        uses: actions/setup-node@v2
+        with:
+          node-version: '17.x'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Synchronize current version
+        if: github.event.inputs.package == matrix.package
+        run: npm version --git-tag-version=false $(npm view ${{ matrix.package }} version)
+        working-directory: ./packages/${{ matrix.folder }}
+
+      - name: Update version
+        if: github.event.inputs.package == matrix.package
+        run: npm version --git-tag-version=false ${{ github.event.inputs.version }}
+        working-directory: ./packages/${{ matrix.folder }}
+
+      - name: Install root dependencies
+        if: github.event.inputs.package == matrix.package
+        run: npm install
+        working-directory: ./packages/${{ matrix.folder }}
+
+      - name: Build
+        if: github.event.inputs.package == matrix.package
+        run: npm run build
+        working-directory: ./packages/${{ matrix.folder }}
+
+      - name: Publish
+        if: github.event.inputs.package == matrix.package
+        run: npm publish
+        working-directory: ./packages/${{ matrix.folder }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
