@@ -4,10 +4,8 @@
   "description": "Multifunction Discord Bot",
   "author": "Viðar",
   "license": "ISC",
-  "main": "./dist/main.js",
   "private": true,
   "workspaces": [
-    "src/*",
     "packages/*"
   ],
   "keywords": [
