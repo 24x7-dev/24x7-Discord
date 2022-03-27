@@ -7,7 +7,7 @@ on:
       - dev
   push:
     paths-ignore:
-      - "docs/docs/**"
+      - 'docs/docs/**'
     branches:
       - main
       - dev
@@ -23,8 +23,8 @@ jobs:
       - name: Install Node v17
         uses: actions/setup-node@v2
         with:
-          node-version: "17.x"
-          registry-url: "https://registry.npmjs.org"
+          node-version: '17.x'
+          registry-url: 'https://registry.npmjs.org'
 
       - name: Install dependencies
         run: npm install --force
