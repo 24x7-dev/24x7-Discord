@@ -8,7 +8,48 @@ on:
     paths-ignore:
       - 'docs/docs/**'
     branches:
+      - mainname: Build
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
       - main
+      - dev
+  push:
+    paths-ignore:
+      - "docs/docs/**"
+    branches:
+      - main
+      - dev
+
+jobs:
+  build:
+    name: Build Monorepo
+    runs-on: ubuntu-latest
+    steps:
+      - name: check out code 🚨
+        uses: actions/checkout@v2
+
+      - name: Install Node v17
+        uses: actions/setup-node@v2
+        with:
+          node-version: "17.x"
+          registry-url: "https://registry.npmjs.org"
+
+      - name: Install dependencies
+        run: npm install --force
+
+      - name: Run prettier
+        run: npm run format-check
+
+      - name: Run ESLint
+        run: npm run lint
+
+      - name: Build
+        run: npm run build
+
+      - name: Run Tests
+        run: npm run test
 
 jobs:
   build:
