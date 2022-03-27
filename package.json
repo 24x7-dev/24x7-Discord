@@ -34,7 +34,7 @@
   ],
   "scripts": {
     "dev": "nodemon ./src/main.ts",
-    "build": "tsc",
+    "build": "turbo run build --parallel",
     "start": "node ./dist/main.js",
     "format": "prettier --write .",
     "format-check": "prettier --check .",
@@ -80,11 +80,24 @@
     "nodemon": "^2.0.15",
     "prettier": "^2.6.0",
     "ts-node": "^10.7.0",
+    "turbo": "^1.1.10",
     "typescript": "^4.6.2"
   },
   "config": {
     "commitizen": {
       "path": "cz-customizable"
+    }
+  },
+  "turbo": {
+    "pipeline": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "outputs": [
+          "build/**"
+        ]
+      }
     }
   },
   "engines": {
