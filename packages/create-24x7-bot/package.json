@@ -1,5 +1,5 @@
 {
-  "name": "@24x7/create-24x7-bot",
+  "name": "create-24x7-bot",
   "version": "0.0.0",
   "description": "create 24x7 Bot (24x7-dev) apps with one command",
   "keywords": [
