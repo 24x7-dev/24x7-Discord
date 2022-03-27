@@ -23,6 +23,29 @@ module.exports = {
   },
   prompt: {
     questions: {
+      emoji: {
+        enum: {
+          emoji: [
+            '🐛',
+            '🐌',
+            '🐞',
+            '🐜',
+            '🐠',
+            '🐢',
+            '🐍',
+            '🐙',
+            '🐚',
+            '🐌',
+            '🐞',
+            '🐜',
+            '🐠',
+            '🐢',
+            '🐍',
+            '🐙',
+            '🐚',
+          ],
+        },
+      },
       type: {
         description: "Select the type of change that you're committing",
         enum: {
