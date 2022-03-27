@@ -4,8 +4,8 @@
     "module": "commonJS",
     "noImplicitAny": false,
     "sourceMap": true,
-    "rootDir": "./src",
-    "outDir": "./dist",
+    "rootDir": "src/",
+    "outDir": "build/",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
@@ -20,5 +20,5 @@
   "include": [
     "src/**/*.ts",
   ],
-  "exclude": ["dist", "node_modules"]
+  "exclude": ["build", "node_modules"]
 }

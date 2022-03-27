@@ -35,8 +35,7 @@
     "create-24x7-bot": "./build/index.js"
   },
   "scripts": {
-    "build": "tsc",
-    "prepare": "husky install"
+    "build": "tsc"
   },
   "dependencies": {
     "axios": "^0.26.1",
@@ -56,14 +55,14 @@
     "node": ">=16.0.0",
     "npm": ">=7.0.0"
   },
-  "publishConfig": {
-    "access": "public"
-  },
   "devDependencies": {
     "@types/prompts": "^2.0.14",
     "@types/rimraf": "^3.0.2",
     "@types/tar": "^6.1.1",
     "@types/validate-npm-package-name": "^3.0.3",
     "husky": "^7.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

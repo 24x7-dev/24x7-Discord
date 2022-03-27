@@ -1,0 +1,64 @@
+{
+  "name": "24x7-discord-bot",
+  "version": "0.0.0",
+  "description": "Multifunction Discord Bot",
+  "author": "Viðar",
+  "license": "ISC",
+  "main": "./build/main.js",
+  "private": true,
+  "keywords": [
+    "typescript",
+    "discord",
+    "bot",
+    "client",
+    "api",
+    "library",
+    "framework",
+    "tool",
+    "decorators"
+  ],
+  "homepage": "https://24x7.gg",
+  "bugs": {
+    "url": "https://github.com/24x7-dev/24x7-Bot/issues/new/choose",
+    "email": "vidar@24x7.gg"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/24x7-dev/24x7-Bot"
+  },
+  "contributors": [
+    "VidarDev <vidar@24x7.gg> (https://github.com/VidarDev)"
+  ],
+  "scripts": {
+    "dev": "nodemon ./src/main.ts",
+    "build": "pnpm run build:esm",
+    "build:esm": "tsc",
+    "start": "node ./build/main.js"
+  },
+  "dependencies": {
+    "@discordjs/builders": "^0.12.0",
+    "@discordjs/rest": "^0.3.0",
+    "ascii-table3": "^0.7.3",
+    "discord-api-types": "^0.29.0",
+    "discord.js": "^13.6.0",
+    "discordx": "^9.4.2",
+    "dotenv": "^16.0.0",
+    "glob": "^7.2.0",
+    "mongoose": "^6.2.6",
+    "npm-install-peers": "^1.2.2",
+    "promisfy": "^1.2.0",
+    "reflect-metadata": "^0.1.13",
+    "tslib": "^2.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "typescript": "^4.6.2"
+  },
+  "engines": {
+    "node": ">=17.8.0",
+    "pnpm": "^6.32.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

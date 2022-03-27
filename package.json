@@ -7,6 +7,7 @@
   "main": "./dist/main.js",
   "private": true,
   "workspaces": [
+    "src/*",
     "packages/*"
   ],
   "keywords": [
@@ -33,7 +34,6 @@
     "VidarDev <vidar@24x7.gg> (https://github.com/VidarDev)"
   ],
   "scripts": {
-    "dev": "nodemon ./src/main.ts",
     "build": "turbo run build --parallel",
     "start": "node ./dist/main.js",
     "format": "prettier --write .",
@@ -41,21 +41,6 @@
     "lint": "eslint ./",
     "prepare": "npx is-ci || npx husky install",
     "cm": "cz"
-  },
-  "dependencies": {
-    "@discordjs/builders": "^0.12.0",
-    "@discordjs/rest": "^0.3.0",
-    "ascii-table3": "^0.7.3",
-    "discord-api-types": "^0.29.0",
-    "discord.js": "^13.6.0",
-    "discordx": "^9.4.2",
-    "dotenv": "^16.0.0",
-    "glob": "^7.2.0",
-    "mongoose": "^6.2.6",
-    "npm-install-peers": "^1.2.2",
-    "promisfy": "^1.2.0",
-    "reflect-metadata": "^0.1.13",
-    "tslib": "^2.3.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.2.3",
@@ -86,18 +71,6 @@
   "config": {
     "commitizen": {
       "path": "cz-customizable"
-    }
-  },
-  "turbo": {
-    "pipeline": {
-      "build": {
-        "dependsOn": [
-          "^build"
-        ],
-        "outputs": [
-          "build/**"
-        ]
-      }
     }
   },
   "engines": {
