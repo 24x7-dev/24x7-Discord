@@ -46,7 +46,7 @@ const res = await prompts(
     message: 'What is your project named?',
     name: 'path',
     type: 'text',
-    validate: name => {
+    validate: (name) => {
       const validation = ValidateNpmName(path.basename(path.resolve(name)))
       if (validation.valid) {
         return true

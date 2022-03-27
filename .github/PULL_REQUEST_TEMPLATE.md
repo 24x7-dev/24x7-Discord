@@ -1,11 +1,11 @@
+# Pull Request
 
 ☝️ PR title should follow [conventional commits](https://github.com/24x7-dev/24x7-Bot/blob/main/.github/COMMIT_CONVENTION.md)
 
 Please carefully read the contribution docs before creating a pull request
- 👉 [Contributing](https://github.com/24x7-dev/24x7-Bot/blob/main/.github/CONTRIBUTING.md)
+👉 [Contributing](https://github.com/24x7-dev/24x7-Bot/blob/main/.github/CONTRIBUTING.md)
 
-
-### 🔗 Linked issue
+## 🔗 Linked issue
 
 <!-- Please ensure there is an open issue and mention its number as #123 -->
 

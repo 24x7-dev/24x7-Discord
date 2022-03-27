@@ -99,7 +99,7 @@ export async function InstallPackage(
     switch (manager) {
       case PackageManager.npm:
         await new Promise((resolve, reject) => {
-          exec('npm install', { cwd: root }, err => {
+          exec('npm install', { cwd: root }, (err) => {
             if (err) {
               reject(err)
             }
@@ -110,7 +110,7 @@ export async function InstallPackage(
 
       case PackageManager.yarn:
         await new Promise((resolve, reject) => {
-          exec('yarn install', { cwd: root }, err => {
+          exec('yarn install', { cwd: root }, (err) => {
             if (err) {
               reject(err)
             }
@@ -121,7 +121,7 @@ export async function InstallPackage(
 
       case PackageManager.pnpm:
         await new Promise((resolve, reject) => {
-          exec('pnpm install', { cwd: root }, err => {
+          exec('pnpm install', { cwd: root }, (err) => {
             if (err) {
               reject(err)
             }

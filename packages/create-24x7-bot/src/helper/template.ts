@@ -15,10 +15,10 @@ export async function GetTemplates(): Promise<
     .get<{ name: string; path: string; type: string }[]>(
       'https://api.github.com/repos/24x7-dev/24x7-templates/contents'
     )
-    .then(res =>
+    .then((res) =>
       res.data
-        .filter(row => row.type === 'dir')
-        .map(row => ({ title: row.name, value: row.path }))
+        .filter((row) => row.type === 'dir')
+        .map((row) => ({ title: row.name, value: row.path }))
     )
     .catch(() => [])
 

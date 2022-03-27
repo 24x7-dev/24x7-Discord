@@ -1,23 +1,16 @@
 {
-  "plugins": [
-    ],
-  "extends": [
-        "airbnb-base",
-        "airbnb-typescript/base",
-        "prettier"
-    ],
+  "plugins": [],
+  "extends": ["airbnb-base", "airbnb-typescript/base", "prettier"],
   "parserOptions": {
     "project": "./tsconfig.eslint.json"
-
   },
   "env": {
     "node": true
-    },
+  },
   "rules": {
     "no-console": "off",
     "no-restricted-syntax": "off",
     "no-empty": "off",
     "no-nested-ternary": "off"
-    }
-  
+  }
 }

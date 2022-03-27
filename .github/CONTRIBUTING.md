@@ -3,21 +3,12 @@
 We would love for you to contribute to 24x7 and help make it even better than it is today!
 As a contributor, here are the guidelines we would like you to follow:
 
-- [Code of Conduct](#coc)
-- [Question or Problem?](#question)
-- [Issues and Bugs](#issue)
-- [Feature Requests](#feature)
-- [Submission Guidelines](#submit)
-- [Coding Rules](#rules)
-- [Commit Message Guidelines](#commit)
-- [Signing the CLA](#cla)
-
-## <a name="coc"></a> Code of Conduct
+## Code of Conduct
 
 Help us keep 24x7 open and inclusive.
 Please read and follow our [Code of Conduct](.github/CODE_OF_CONDUCT.md).
 
-## <a name="question"></a> Got a Question or Problem?
+## Got a Question or Problem?
 
 Do not open issues for general support questions as we want to keep GitHub issues for bug reports and feature requests.
 Instead, we recommend using [Discord Server](https://discord.gg/9yUjFtcFqP) to ask support-related questions.
@@ -30,9 +21,10 @@ Discord is a much better place to ask questions since:
 To save your and our time, we will systematically close all issues that are requests for general support and redirect people to Discord server.
 
 ## Getting Help
+
 At some point, you may find that there's an issue you need some help with. But don't worry! We're a friendly community of developers and we'd love to help.
 
-"I can't figure out how to __."
+"I can't figure out how to \_\_."
 You've read through these docs and you think it should be possible, but it's not clear how. The best thing is to open a [Discord Discussion](https://discord.gg/9yUjFtcFqP) .
 
 Please don't feel embarrassed about asking a question that you think is easy - we've all been there! ❤️
@@ -46,14 +38,14 @@ Everyone you'll encounter is helping out because they care, not because they are
 
 And finally, just ask the question! There's no need to [ask permission to ask a question](https://dontasktoask.com) or [wait for someone to reply to your 'hello'](https://www.nohello.com) . If you do, you might not get a response because people are waiting for the whole question before engaging.
 
-## <a name="issue"></a> "Could there be a bug?"
+## "Could there be a bug?"
 
 Something isn't working the way that the docs say that it should. You're not sure if it's a bug. You've searched through the [open issues](https://github.com/24x7-dev/24x7-Bot/issues) but you can't find anything. (if there is a closed issue, please create a new one).
 
 You can help us by [submitting an issue](#submit-issue) to our [GitHub Repositorys](https://github.com/orgs/24x7-dev/repositories).
 Even better, you can [submit a Pull Request](#submit-pr) with a fix.
 
-## <a name="feature"></a> Missing a Feature?
+## Missing a Feature?
 
 You can _request_ a new feature by [submitting an issue](#submit-issue) to our GitHub Repository.
 If you would like to _implement_ a new feature, please consider the size of the change in order to determine the right steps to proceed:
@@ -66,11 +58,11 @@ If you would like to _implement_ a new feature, please consider the size of the 
 - **Small Features** can be crafted and directly [submitted as a Pull Request](#submit-pr).
 
 - **Project Board**:
-You can also submit a request to our [Project Board](https://github.com/orgs/24x7-dev/projects). And there you can do the already requested tasks together with us.
+  You can also submit a request to our [Project Board](https://github.com/orgs/24x7-dev/projects). And there you can do the already requested tasks together with us.
 
-## <a name="submit"></a> Submission Guidelines
+## Submission Guidelines
 
-### <a name="submit-issue"></a> Submitting an Issue
+### Submitting an Issue
 
 Before you submit an issue, please search the [issue tracker](https://github.com/24x7-dev/24x7-Bot/issues). An issue for your problem might already exist and the discussion might inform you of workarounds readily available.
 
@@ -88,7 +80,7 @@ Unfortunately, we are not able to investigate / fix bugs without a minimal repro
 
 You can file new issues by selecting from our [issue templates](https://github.com/24x7-dev/24x7-Bot/issues/new/choose) and filling out the issue template.
 
-### <a name="submit-pr"></a> Submitting a Pull Request (PR)
+### Submitting a Pull Request (PR)
 
 Before you submit your Pull Request (PR) consider the following guidelines:
 
@@ -137,7 +129,7 @@ Before you submit your Pull Request (PR) consider the following guidelines:
 
 The 24x7 team reserves the right not to accept pull requests from community members who haven't been good citizens of the community. Such behavior includes not following the [24x7 code of conduct](https://github.com/24x7/24x7-Bot/blob/main/.github/CODE_OF_CONDUCT.md) and applies within or outside of 24x7 managed channels.
 
-## <a name="rules"></a> Coding Rules
+## Coding Rules
 
 To ensure consistency throughout the source code, keep these rules in mind as you are working:
 
@@ -147,27 +139,9 @@ To ensure consistency throughout the source code, keep these rules in mind as yo
 
   An automated formatter is available.
 
-## <a name="commit"></a> Commit Message Format
+## Commit Message Format
 
 We have very precise rules over how our Git commit messages must be formatted.
 This format leads to **easier to read commit history**.
 
 You can find our commit message convention [here](https://github.com/24x7/24x7-Bot/blob/main/.github/COMMIT_CONVENTION.md)
-
-## <a name="cla"></a> Signing the CLA
-
-Please sign our Contributor License Agreement (CLA) before sending pull requests. For any code
-changes to be accepted, the CLA must be signed. It's a quick process, we promise!
-
-- For individuals, we have a [simple click-through form]().
-- For corporations, we'll need you to
-  _***print, sign and one of scan+email, fax or mail the form***_.
-
-If you have more than one GitHub accounts, or multiple email addresses associated with a single GitHub account, you must sign the CLA using the primary email address of the GitHub account used to author Git commits and send pull requests.
-
-The following documents can help you sort out issues with GitHub accounts and multiple email addresses:
-
-- https://help.github.com/articles/setting-your-commit-email-address-in-git/
-- https://stackoverflow.com/questions/37245303/what-does-usera-committed-with-userb-13-days-ago-on-github-mean
-- https://help.github.com/articles/about-commit-email-addresses/
-- https://help.github.com/articles/blocking-command-line-pushes-that-expose-your-personal-email-address/

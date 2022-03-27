@@ -40,8 +40,8 @@ export function IsFolderEmpty(root: string, name: string): boolean {
   ]
   const conflicts = fs
     .readdirSync(root)
-    .filter(file => !validFiles.includes(file))
-    .filter(file => !/\.iml$/.test(file))
+    .filter((file) => !validFiles.includes(file))
+    .filter((file) => !/\.iml$/.test(file))
 
   if (conflicts.length > 0) {
     console.log(
