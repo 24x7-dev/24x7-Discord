@@ -31,9 +31,7 @@
     "README.md",
     "package.json"
   ],
-  "bin": {
-    "create-24x7-bot": "./build/index.js"
-  },
+  "bin": "./build/index.js",
   "scripts": {
     "build": "tsc"
   },

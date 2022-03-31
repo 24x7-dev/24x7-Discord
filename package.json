@@ -33,7 +33,7 @@
   ],
   "scripts": {
     "build": "turbo run build --parallel",
-    "start": "node ./dist/main.js",
+    "start": "node ./build/main.js",
     "format": "prettier --write .",
     "format-check": "prettier --check .",
     "lint": "eslint ./",
@@ -74,8 +74,5 @@
   "engines": {
     "node": ">=17.8.0",
     "pnpm": "^6.32.3"
-  },
-  "publishConfig": {
-    "access": "restricted"
   }
 }

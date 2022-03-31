@@ -5,7 +5,7 @@ import tar from 'tar'
 import { promisify } from 'util'
 
 /**
- * Get templates list from https://github.com/24x7-dev/24x7-templates
+ * Get templates list from https://github.com/24x7-dev/24x7-bot-templates
  * @returns
  */
 export async function GetTemplates(): Promise<
@@ -13,7 +13,7 @@ export async function GetTemplates(): Promise<
 > {
   const response = await axios
     .get<{ name: string; path: string; type: string }[]>(
-      'https://api.github.com/repos/24x7-dev/24x7-templates/contents'
+      'https://api.github.com/repos/24x7-dev/24x7-bot-templates/contents'
     )
     .then((res) =>
       res.data
@@ -34,7 +34,7 @@ export async function GetTemplates(): Promise<
 export async function IsTemplateExist(name: string): Promise<boolean> {
   const response = await axios
     .get(
-      `https://api.github.com/repos/24x7-dev/24x7-templates/contents/${name}?ref=main`
+      `https://api.github.com/repos/24x7-dev/24x7-bot-templates/contents/${name}?ref=main`
     )
     .then(() => true)
     .catch(() => false)
@@ -57,8 +57,8 @@ export function DownloadAndExtractTemplate(
 
   return pipeline(
     got.stream(
-      'https://codeload.github.com/24x7-dev/24x7-templates/tar.gz/main'
+      'https://codeload.github.com/24x7-dev/24x7-bot-templates/tar.gz/main'
     ),
-    tar.extract({ cwd: root, strip: 2 }, [`24x7-templates-main/${name}`])
+    tar.extract({ cwd: root, strip: 2 }, [`24x7-bot-templates-main/${name}`])
   )
 }

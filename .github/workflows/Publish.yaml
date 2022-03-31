@@ -20,7 +20,7 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - package: '@24x7/create-24x7-bot'
+          - package: 'create-24x7-bot'
             folder: 'create-24x7-bot'
     steps:
       - name: 🚨check out code

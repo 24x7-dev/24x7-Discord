@@ -42,8 +42,8 @@ let projectPath = './'
 
 const res = await prompts(
   {
-    initial: 'my-app',
-    message: 'What is your project named?',
+    initial: 'my-bot',
+    message: 'What is your project named❓',
     name: 'path',
     type: 'text',
     validate: (name) => {
@@ -52,7 +52,7 @@ const res = await prompts(
         return true
       }
 
-      return `Invalid project name: ${validation.problems?.[0]}` ?? 'unknown'
+      return `❎Invalid project name: ${validation.problems?.[0]}` ?? 'unknown'
     },
   },
   {
@@ -86,14 +86,14 @@ if (packageManager === null) {
 const templateList = await GetTemplates()
 
 if (!templateList.length) {
-  console.log(chalk.red('> Unable to load templates :('))
+  console.log(chalk.red('> ❎Unable to load templates :('))
   process.exit()
 }
 
 const response = await prompts<string>(
   {
     choices: templateList,
-    message: 'Pick template',
+    message: '🪧Pick template',
     name: 'template',
     type: 'select',
   },
@@ -105,7 +105,7 @@ const response = await prompts<string>(
 )
 
 if (!response.template || typeof response.template !== 'string') {
-  console.log(chalk.red('> Please select a template :('))
+  console.log(chalk.red('> 🪧Please select a template :('))
   process.exit()
 }
 
@@ -116,7 +116,7 @@ if (!response.template || typeof response.template !== 'string') {
 try {
   await MakeDir(resolvedProjectPath)
 } catch (err) {
-  console.log(chalk.red('> Failed to create specified directory :('))
+  console.log(chalk.red('> ❎Failed to create specified directory :('))
   process.exit()
 }
 
@@ -133,14 +133,14 @@ if (!IsFolderEmpty(resolvedProjectPath, projectName)) {
  */
 
 const spinner = ora({
-  text: chalk.bold('Downloading template...'),
+  text: chalk.bold('⬇️Downloading template...'),
 }).start()
 
 try {
   await DownloadAndExtractTemplate(resolvedProjectPath, response.template)
-  spinner.succeed(chalk.bold('Downloaded template'))
+  spinner.succeed(chalk.bold('⬇️Downloaded template'))
 } catch (err) {
-  spinner.fail(chalk.bold('Failed to download selected template :('))
+  spinner.fail(chalk.bold('❎Failed to download selected template :('))
   process.exit()
 }
 
@@ -157,7 +157,7 @@ try {
     }
   )
 } catch (err) {
-  console.log(chalk.red('> Failed to update project name :('))
+  console.log(chalk.red('> ❎Failed to update project name :('))
 }
 
 /**
@@ -179,12 +179,12 @@ const isWin = process.platform === 'win32'
 
 console.log(
   chalk.greenBright('√'),
-  chalk.bold('Created 24x7-Bot (24x7) project'),
+  chalk.bold('🎉Created 24x7-Bot (24x7) project'),
   chalk.gray('»'),
   chalk.greenBright(projectName)
 )
 
-console.log(chalk.blueBright('?'), chalk.bold('Next Steps!'))
+console.log(chalk.blueBright('?'), chalk.bold('Next Steps!⤵️'))
 console.log(`\t> cd ${projectPath}`)
 
 if (PackageManager.none === packageManager) {
@@ -192,12 +192,17 @@ if (PackageManager.none === packageManager) {
 }
 
 if (isWin) {
-  console.log(chalk.dim('\t> // Command Prompt (CMD)'))
-  console.log('\t> Create .env file with TOKEN=youre-bot-token')
-  console.log(chalk.dim('\t> // Powershell'))
-  console.log('\t> Create .env file with TOKEN=youre-bot-token"')
+  console.log(
+    chalk.blueBright(
+      'rename the example.env file to .env and enter your token TOKEN=MYbotTOKENfromDISCORD'
+    )
+  )
 } else {
-  console.log('\t> Create .env file with TOKEN=youre-bot-token')
+  console.log(
+    chalk.blueBright(
+      'rename the example.env file to .env and enter your token TOKEN=MYbotTOKENfromDISCORD'
+    )
+  )
 }
 
 if (PackageManager.none === packageManager) {
@@ -210,10 +215,10 @@ console.log()
 console.log(chalk.blueBright('?'), chalk.bold('Support'))
 console.log('    Discord Server: https://discord.gg/9yUjFtcFqP')
 console.log('     Documentation: https://24x7.gg')
-console.log('            GitHub: https://github.com/24x7-dev/24x7-Bot')
+console.log('            GitHub: https://github.com/24x7-dev/24x7-Discord')
 console.log()
 console.log(
   chalk.greenBright('√'),
-  chalk.bold('Thank you for using 24x7 (24x7)'),
+  chalk.bold('Thank you for using 24x7-Bot!'),
   chalk.red('❤️')
 )

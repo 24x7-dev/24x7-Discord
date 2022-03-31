@@ -34,7 +34,7 @@ export default function TryGitInit(root: string): boolean {
 
     execSync('git checkout -b main', { cwd: root, stdio: 'ignore' })
     execSync('git add -A', { cwd: root, stdio: 'ignore' })
-    execSync('git commit -m "Initial commit from discordx"', {
+    execSync('git commit -m "🎉 Initial commit from 24x7"', {
       cwd: root,
       stdio: 'ignore',
     })
