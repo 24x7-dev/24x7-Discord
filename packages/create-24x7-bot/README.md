@@ -7,7 +7,7 @@
   <p align="center">
     <a href="https://discord.gg/9yUjFtcFqP"
       ><img
-        src="https://img.shields.io/discord/942037919089164329&logo=discord&logoColor=white"
+        src="https://img.shields.io/discord/942037919089164329?&logo=discord"
         alt="Discord server"
     /></a>
     <a href="https://www.npmjs.com/package/create-24x7-bot"
@@ -26,25 +26,25 @@
         alt="Build status"
     /></a>
   </p>
-  <p align="center">
-    <b> Create a discord bot with TypeScript and Decorators! </b>
-  </p>
+  <h3 align="center">
+    <b>Create a discord bot with TypeScript! </b>
+  </h3>
 </div>
 
-# 📖 Introduction
+## 📖 Introduction
 
-Create 24x7-Bot (24x7) apps with one command.
+Create 24x7-Bot (24x7-dev) apps with one command.
 
-# 💻 Installation
+## 💻 Installation
 
-```
+```ssh
 npx create-24x7-bot
 ```
 
-# ☎️ Need help?
+## ☎️ Need help?
 
-Ask in **[discord server](https://discord.gg/9yUjFtcFqP)** or open a **[issue](https://github.com/24x7-dev/24x7-Bot/issues/new/choose)**
+Ask in **[discord server](https://discord.gg/9yUjFtcFqP)** or open a **[issue](https://github.com/24x7-dev/24x7-Discord/issues/new/choose)**
 
-# Thank you
+### Thank you
 
-Show your support for [24x7](https://www.npmjs.com/package/24x7) by giving us a star on [github](https://github.com/24x7-dev/24x7-Bot).
+Show your support for [24x7](https://www.npmjs.com/package/24x7) by giving us a star on [github](https://github.com/24x7-dev/24x7-Discord).

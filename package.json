@@ -21,12 +21,12 @@
   ],
   "homepage": "https://24x7.gg",
   "bugs": {
-    "url": "https://github.com/24x7-dev/24x7-Bot/issues/new/choose",
+    "url": "https://github.com/24x7-dev/24x7-Discord/issues/new/choose",
     "email": "vidar@24x7.gg"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/24x7-dev/24x7-Bot"
+    "url": "https://github.com/24x7-dev/24x7-Discord"
   },
   "contributors": [
     "VidarDev <vidar@24x7.gg> (https://github.com/VidarDev)"

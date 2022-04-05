@@ -13,13 +13,13 @@
     "template",
     "bot"
   ],
-  "homepage": "https://github.com/24x7-dev/24x7-Bot#readme",
+  "homepage": "https://github.com/24x7-dev/24x7-Discord/blob/main/packages/create-24x7-bot/README.md",
   "bugs": {
-    "url": "https://github.com/24x7-dev/24x7-Bot/issues"
+    "url": "https://github.com/24x7-dev/24x7-Discord/issues/new/choose"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/24x7-dev/24x7-Bot.git"
+    "url": "git+https://github.com/24x7-dev/24x7-Discord/tree/main/packages/create-24x7-bot"
   },
   "license": "MIT",
   "author": "Viðar <Vidar@24x7.gg> (https://github.com/VidarDev)",
