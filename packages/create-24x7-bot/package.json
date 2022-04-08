@@ -1,5 +1,5 @@
 {
-  "name": "create-24x7-bot",
+  "name": "make-24x7-bot",
   "version": "0.0.0",
   "description": "create 24x7 Bot (24x7-dev) apps with one command",
   "keywords": [
@@ -13,13 +13,13 @@
     "template",
     "bot"
   ],
-  "homepage": "https://github.com/24x7-dev/24x7-Discord/blob/main/packages/create-24x7-bot/README.md",
+  "homepage": "https://github.com/24x7-dev/24x7-Discord/blob/main/packages/make-24x7-bot/README.md",
   "bugs": {
     "url": "https://github.com/24x7-dev/24x7-Discord/issues/new/choose"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/24x7-dev/24x7-Discord/tree/main/packages/create-24x7-bot"
+    "url": "git+https://github.com/24x7-dev/24x7-Discord/tree/main/packages/make-24x7-bot"
   },
   "license": "MIT",
   "author": "Viðar <Vidar@24x7.gg> (https://github.com/VidarDev)",

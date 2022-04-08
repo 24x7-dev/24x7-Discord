@@ -20,8 +20,8 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - package: 'create-24x7-bot'
-            folder: 'create-24x7-bot'
+          - package: 'make-24x7-bot'
+            folder: 'make-24x7-bot'
     steps:
       - name: 🚨check out code
         if: github.event.inputs.package == matrix.package

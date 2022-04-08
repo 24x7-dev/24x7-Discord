@@ -33,8 +33,8 @@ try {
 
 if (update) {
   const updateCmd = isInstalledGlobally
-    ? 'npm i -g create-24x7-bot@latest'
-    : 'npm i create-24x7-bot@latest'
+    ? 'npm i -g make-24x7-bot@latest'
+    : 'npm i make-24x7-bot@latest'
 
   const template = `Update available ${chalk.dim(
     `${packageJson.version}`

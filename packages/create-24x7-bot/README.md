@@ -10,14 +10,14 @@
         src="https://img.shields.io/discord/942037919089164329?&logo=discord"
         alt="Discord server"
     /></a>
-    <a href="https://www.npmjs.com/package/create-24x7-bot"
+    <a href="https://www.npmjs.com/package/make-24x7-bot"
       ><img
-        src="https://img.shields.io/npm/v/create-24x7-bot.svg?maxAge=3600"
+        src="https://img.shields.io/npm/v/make-24x7-bot.svg?maxAge=3600"
         alt="NPM version"
     /></a>
-    <a href="https://www.npmjs.com/package/create-24x7-bot"
+    <a href="https://www.npmjs.com/package/make-24x7-bot"
       ><img
-        src="https://img.shields.io/npm/dt/create-24x7-bot.svg?maxAge=3600"
+        src="https://img.shields.io/npm/dt/make-24x7-bot.svg?maxAge=3600"
         alt="NPM downloads"
     /></a>
     <a href="https://github.com/24x7-dev/24x7-Bot/actions"
@@ -38,7 +38,7 @@ Create 24x7-Bot (24x7-dev) apps with one command.
 ## 💻 Installation
 
 ```ssh
-npx create-24x7-bot
+npx make-24x7-bot
 ```
 
 ## ☎️ Need help?

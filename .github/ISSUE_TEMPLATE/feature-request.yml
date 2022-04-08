@@ -26,6 +26,6 @@ body:
       description: Please select the package that the requested feature pertains to.
       options:
         - '24x7'
-        - 'create-24x7-bot'
+        - 'make-24x7-bot'
     validations:
       required: true
